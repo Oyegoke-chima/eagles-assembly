@@ -135,6 +135,18 @@ function About() {
           </div>
         </div>
       </section>
+      {/* ADDRESS */}
+      <section className="address-section">
+        <div className="address-container">
+          <p className="address-label">FIND US</p>
+          <h2 className="address-title">Our Location</h2>
+          <div className="address-card">
+            <span className="address-icon">📍</span>
+            <p>20 Ogunbiyi Street, Off Akinwowo,</p>
+            <p>Alimosho, Lagos</p>
+          </div>
+        </div>
+      </section>
 
       {/* NEW MEMBER FORM */}
       <section className="new-member-section" id="join">

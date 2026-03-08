@@ -13,7 +13,12 @@ function Footer() {
             encounters that bring change to the lives of people. It is felt, seen,
             heard and perceived like fragrance.
           </p>
+          <p className="footer-address">
+            📍 20 Ogunbiyi Street, Off Akinwowo, Alimosho, Lagos
+          </p>
         </div>
+    
+
 
         <div className="footer-col">
           <h4 className="footer-heading">QUICK LINKS</h4>
