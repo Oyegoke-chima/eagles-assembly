@@ -8,20 +8,14 @@ function Give() {
   const handleCopy = (number, index) => {
     navigator.clipboard.writeText(number)
     setCopiedIndex(index)
-    setTimeout(() => setCopiedIndex(null), 1000)
+    setTimeout(() => setCopiedIndex(null), 1500)
   }
 
-  const fidelityAccounts = [
-    { label: 'OFFERING / TITHE', number: '0702817549' },
-    { label: 'OFFERING / TITHE', number: '0702817549' },
-    { label: 'OFFERING / TITHE', number: '0702817549' },
-    { label: 'OFFERING / TITHE', number: '0702817549' },
-  ]
-
-  const otherAccounts = [
-    { bank: 'Stanbic Bank', logo: '/images/stanbic.png', number: '0702817549' },
-    { bank: 'Moniepoint Microfinance Bank', logo: '/images/moniepoint.png', number: '0702817549' },
-    { bank: 'Moniepoint Microfinance Bank', logo: '/images/moniepoint.png', number: '0702817549' },
+  const accounts = [
+    { label: 'OFFERING / TITHE', bank: 'Fidelity Bank PLC', number: '4110022096', logo: '/images/fidelity.png' },
+    { label: 'BUILDING ACCOUNT', bank: 'Jubilee Mortgage Bank', number: '0001291548', logo: '/images/jubilee.png' },
+    { label: 'BUILDING ACCOUNT', bank: 'Haggai Mortgage Bank', number: '02030186957', logo: '/images/haggai.png' },
+    { label: 'OFFERING / TITHE', bank: 'Union Bank PLC', number: '0108728838', logo: '/images/union.png' },
   ]
 
   return (
@@ -54,20 +48,19 @@ function Give() {
               partnering with God for the spread of the gospel in our day.</p>
           </div>
 
-          {/* Fidelity Card */}
+          {/* CHURCH ACCOUNTS CARD */}
           <div className="primary-card">
             <div className="bank-header">
-              <div className="bank-left">
-                <img src="/images/fidelity.png" alt="Fidelity Bank" />
-              </div>
+              <span className="church-accounts-title">CHURCH ACCOUNTS</span>
               <img src="/images/flag.jpg" alt="Nigeria Flag" className="flag" />
             </div>
 
             <div className="account-grid">
-              {fidelityAccounts.map((account, index) => (
+              {accounts.map((account, index) => (
                 <div className="account-box" key={index}>
                   <small>{account.label}</small>
                   <div className="account-number">
+                    <img src={account.logo} alt={account.bank} className="bank-logo-sm" />
                     <span className="account-text">{account.number}</span>
                     <button
                       className="copy-btn"
@@ -82,27 +75,15 @@ function Give() {
             </div>
           </div>
 
-          {/* Other Accounts */}
-          <div className="other-accounts">
-            <h3>Other Accounts</h3>
-            {otherAccounts.map((account, index) => (
-              <div className="other-card" key={index}>
-                <div className="other-left">
-                  <img src={account.logo} alt={account.bank} className="bank-logo" />
-                </div>
-                <span className="bank-name">{account.bank}</span>
-                <div className="account-number">
-                  <span className="account-text">{account.number}</span>
-                  <button
-                    className="copy-btn"
-                    onClick={() => handleCopy(account.number, `other-${index}`)}
-                    style={{ opacity: copiedIndex === `other-${index}` ? 0.5 : 1 }}
-                  >
-                    <img src="/images/copy.png" alt="Copy" className="copy-icon" />
-                  </button>
-                </div>
-              </div>
-            ))}
+          {/* THANK YOU */}
+          <div className="give-thankyou">
+            <div className="give-thankyou-illustration">🙌</div>
+            <h3 className="give-thankyou-title">Thank You for Giving!</h3>
+            <p className="give-thankyou-text">
+              Your generosity is a seed sown into the Kingdom of God.
+              Heaven records every act of giving, and you will not go unrewarded.
+              God bless you abundantly.
+            </p>
           </div>
 
         </div>

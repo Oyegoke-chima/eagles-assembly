@@ -570,39 +570,47 @@ html {
   max-width: 1100px;
   margin: 0 auto;
   padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-heading {
-  font-family: 'Kalnia', serif;
-  font-size: 0.9rem;
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Lato', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.45);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 0.8rem;
 }
 
-
 .footer-about {
-  font-family: 'Kalnia', serif;
-  font-size: 0.85rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
   color: #ffffff;
-  line-height: 1.5;
-  margin:0;
+  line-height: 1.8;
+  margin: 0;
 }
 
 .footer-bold {
   font-weight: 700;
 }
 
+.footer-address {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: #000000;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
 .footer-links {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
-  padding:0;
-  margin:0;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-links a {
@@ -614,38 +622,36 @@ html {
   letter-spacing: 1px;
   font-weight: 600;
   transition: opacity 0.2s ease, letter-spacing 0.2s ease;
-  display:inline-block;
+  display: inline-block;
 }
 
 .footer-links a:hover {
-  opacity: 0.7;
-  letter-spacing: 1.5px;
+  opacity: 0.5;
+  letter-spacing: 2px;
 }
 
 .footer-bottom {
   text-align: center;
   padding-top: 1.5rem;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  color: #000000;
-  opacity: 0.7;
   max-width: 1100px;
-}
-.footer-bottom p {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.5);
-  letter-spacing: 1px;
+  margin: 0 auto;
 }
 
-.footer-links-title {
-  margin-bottom: 0.6rem; /* reduce this too */
+.footer-bottom p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.footer-col-title {
-  margin-bottom: 0.6rem; /* change whatever value is there to this */
-}
-.footer-links li {
-  margin-bottom: 0.2rem; /* reduce gap between each link */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 
@@ -1080,7 +1086,7 @@ html {
 
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     text-align: center;      /* center everything */
   }
 
@@ -1705,4 +1711,127 @@ html {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+}
+ /* ADDRESS SECTION */
+.address-section {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.address-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.address-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFB783;
+  margin-bottom: 0.8rem;
+}
+
+.address-title {
+  font-family: 'Kalnia', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.address-card {
+  background: #f9f9f9;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  padding: 2.5rem;
+  display: inline-block;
+}
+
+.address-card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.address-card p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #333333;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+/* FOOTER ADDRESS */
+.footer-address {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: hsl(0, 0%, 96%);
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+/* ===========================
+   GIVE - CHURCH ACCOUNTS TITLE
+=========================== */
+.church-accounts-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+/* ===========================
+   GIVE - BANK LOGO IN ACCOUNT BOX
+=========================== */
+.bank-logo-sm {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   GIVE - THANK YOU
+=========================== */
+.give-thankyou {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff8f3;
+  border-radius: 20px;
+  border: 1px solid rgba(244, 168, 124, 0.3);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.give-thankyou-illustration {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.give-thankyou-title {
+  font-family: 'Kalnia', serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.give-thankyou-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: #555555;
+  line-height: 1.9;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
 }

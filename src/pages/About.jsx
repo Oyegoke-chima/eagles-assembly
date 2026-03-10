@@ -117,20 +117,22 @@ function About() {
             <div className="service-box">
               <span className="service-box-icon">🌅</span>
               <h4>Sunday Service</h4>
-              <p>First Service — 8:00 AM</p>
-              <p>Second Service — 10:30 AM</p>
+              <p>Sunday School  — 8:00 AM - 9:00 AM</p>
+              <p>Sunday Glorious Service — 9:00 AM</p>
+              <p>Communion Service 1st Sundays — 5:30pm </p>
             </div>
             <div className="service-box">
               <span className="service-box-icon">📖</span>
               <h4>Midweek Service</h4>
-              <p>Wednesday — 6:00 PM</p>
-              <p>Bible Study & Prayer</p>
+              <p>Digging Deep (Every Tuesday) — 6:30 PM</p>
+              <p>Faith Clinic (Every Thursday) —  6:30 PM</p>
             </div>
             <div className="service-box">
-              <span className="service-box-icon">🎙️</span>
-              <h4>Online — Mixlr</h4>
-              <p>Daily — 6:00 PM</p>
-              <p>The Moment of Truth</p>
+              <span className="service-box-icon">✨</span>
+              <h4>SPECIAL SERVICES</h4>
+              <p>Monthly Vigil (Every 2nd Fridays) — 11:00 PM</p>
+              <p>Revival Services (2nd & Last Wednesdays) — 6:00 PM - 8:00 PM</p>
+              <p>Annual Revival Month</p>
             </div>
           </div>
         </div>
