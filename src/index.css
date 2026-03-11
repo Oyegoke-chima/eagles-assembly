@@ -1620,7 +1620,7 @@ html {
    NEW MEMBER FORM
 =========================== */
 .new-member-section {
-  background: #FFB783;
+  background: #000000;
   padding: 6rem 2rem;
 }
 
@@ -1644,14 +1644,14 @@ html {
   font-family: 'Kalnia', serif;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .new-member-subtitle {
   font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 2.5rem;
   line-height: 1.7;
 }
@@ -1834,4 +1834,158 @@ html {
   max-width: 550px;
   margin: 0 auto;
   text-align: center;
+}
+
+/* ===========================
+   MAIN ADDRESS TAG
+=========================== */
+.main-address {
+  margin-bottom: 3rem;
+}
+
+.address-main-tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #E8845A;
+  margin-bottom: 0.3rem;
+}
+
+/* ===========================
+   FELLOWSHIP CENTRES
+=========================== */
+.fellowship-heading {
+  font-family: 'Kalnia', serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.fellowship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.fellowship-card {
+  background: #ffffff;
+  border: 1px solid #f0e8e0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.fellowship-number {
+  background: #FFB783;
+  color: #fff;
+  font-family: 'Kalnia', serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fellowship-info h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.4rem;
+}
+
+.fellowship-axis {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: #888;
+}
+
+.fellowship-info p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+
+.fellowship-host {
+  font-style: italic;
+  color: #888 !important;
+}
+
+.fellowship-call {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #FFB783;
+  text-decoration: none;
+}
+
+.fellowship-call:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   CALL FOR DIRECTIONS
+=========================== */
+.address-call-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #FFF3EC;
+  border: 1px solid rgba(232, 132, 90, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.address-call-card span {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.address-call-title {
+  font-family: 'Kalnia', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.address-call-sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.address-call-btn {
+  display: inline-block;
+  background: #FFB783;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 0.7rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.address-call-btn:hover {
+  background: #d4693e;
 }

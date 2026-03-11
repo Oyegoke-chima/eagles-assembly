@@ -117,38 +117,120 @@ function About() {
             <div className="service-box">
               <span className="service-box-icon">🌅</span>
               <h4>Sunday Service</h4>
-              <p>Sunday School  — 8:00 AM - 9:00 AM</p>
-              <p>Sunday Glorious Service — 9:00 AM</p>
-              <p>Communion Service 1st Sundays — 5:30pm </p>
+              <p>Sunday School  — 8:00 AM - 9:00 AM.</p>
+              <p>Sunday Glorious Service — 9:00 AM.</p>
+              <p>Communion Service 1st Sundays — 5:30 PM. </p>
             </div>
             <div className="service-box">
               <span className="service-box-icon">📖</span>
               <h4>Midweek Service</h4>
-              <p>Digging Deep (Every Tuesday) — 6:30 PM</p>
-              <p>Faith Clinic (Every Thursday) —  6:30 PM</p>
+              <p>Digging Deep (Every Tuesday) — 6:30 PM.</p>
+              <p>Faith Clinic (Every Thursday) —  6:30 PM.</p>
             </div>
             <div className="service-box">
               <span className="service-box-icon">✨</span>
               <h4>SPECIAL SERVICES</h4>
-              <p>Monthly Vigil (Every 2nd Fridays) — 11:00 PM</p>
-              <p>Revival Services (2nd & Last Wednesdays) — 6:00 PM - 8:00 PM</p>
+              <p>Monthly Vigil (Every 2nd Fridays) — 11:00 PM.</p>
+              <p>Revival Services (2nd & Last Wednesdays) — 6:00 PM - 8:00 PM.</p>
               <p>Annual Revival Month</p>
             </div>
           </div>
         </div>
       </section>
       {/* ADDRESS */}
-      <section className="address-section">
-        <div className="address-container">
-          <p className="address-label">FIND US</p>
-          <h2 className="address-title">Our Location</h2>
-          <div className="address-card">
-            <span className="address-icon">📍</span>
-            <p>20 Ogunbiyi Street, Off Akinwowo,</p>
-            <p>Alimosho, Lagos</p>
-          </div>
+      {/* ADDRESS */}
+<section className="address-section">
+  <div className="address-container">
+    <p className="address-label">FIND US</p>
+    <h2 className="address-title">Our Location</h2>
+
+    {/* MAIN LOCATION */}
+    <div className="address-card main-address">
+      <span className="address-icon">📍</span>
+      <p className="address-main-tag">HEADQUARTERS</p>
+      <p>20 Ogunbiyi Street, Off Akinwowo,</p>
+      <p>Alimosho, Lagos</p>
+    </div>
+
+    {/* HOUSE FELLOWSHIP CENTRES */}
+    <h3 className="fellowship-heading">House Fellowship Centres</h3>
+    <div className="fellowship-grid">
+
+      <div className="fellowship-card">
+        <span className="fellowship-number">1</span>
+        <div className="fellowship-info">
+          <h4>Divine Grace Centre</h4>
+          <p>16, Segun Marekobosi Street, Off Folarin Street, Egbeda/Alimosho, Lagos</p>
+          <p className="fellowship-host">Host: Sis. Amarachi Nwaorgu</p>
+          <a href="tel:08034406279" className="fellowship-call">📞 08034406279</a>
         </div>
-      </section>
+      </div>
+
+      <div className="fellowship-card">
+        <span className="fellowship-number">2</span>
+        <div className="fellowship-info">
+          <h4>House of Prayer Centre <span className="fellowship-axis">(Agbelekale Area)</span></h4>
+          <p>8, Isua Street, Agbelekale, Abule Egba</p>
+          <p className="fellowship-host">Host: Bro. & Sis. Taiwo Rokosu</p>
+          <a href="tel:08033448926" className="fellowship-call">📞 08033448926</a>
+        </div>
+      </div>
+
+      <div className="fellowship-card">
+        <span className="fellowship-number">3</span>
+        <div className="fellowship-info">
+          <h4>Holiness Centre <span className="fellowship-axis">(Salolo/Meiran Axis)</span></h4>
+          <p>Flat 5, Block 130, Ojokoro Housing Estate, Meiran-Ijaye, Meiran B/Stop, Off Lagos/Abeokuta E/way</p>
+          <p className="fellowship-host">Host: Bro. & Sis. Demola Ekundayo</p>
+          <a href="tel:08061185051" className="fellowship-call">📞 08061185051</a>
+        </div>
+      </div>
+
+      <div className="fellowship-card">
+        <span className="fellowship-number">4</span>
+        <div className="fellowship-info">
+          <h4>Salvation Centre <span className="fellowship-axis">(Akiwowo/Egbeda Axis)</span></h4>
+          <p>2, Jimoh Akinremi Street Adjacent Akiwowo Street, Egbeda</p>
+          <p className="fellowship-host">Host: Mama Fatoki</p>
+          <a href="tel:07039738055" className="fellowship-call">📞 07039738055</a>
+        </div>
+      </div>
+
+      <div className="fellowship-card">
+        <span className="fellowship-number">5</span>
+        <div className="fellowship-info">
+          <h4>Victory Centre <span className="fellowship-axis">(Ogunbiyi/Akiwowo Axis)</span></h4>
+          <p>6, Ogunbiyi Street, Off Akiwowo Street</p>
+          <p className="fellowship-host">Host: Bro. & Sis. Ik/Nkem Okonmah</p>
+          <a href="tel:07031884354" className="fellowship-call">📞 07031884354</a>
+        </div>
+      </div>
+
+      <div className="fellowship-card">
+        <span className="fellowship-number">6</span>
+        <div className="fellowship-info">
+          <h4>Jesus Haven Centre <span className="fellowship-axis">(Abesan/Ipaja Axis)</span></h4>
+          <p>4, Ighodoula Street Abusede, Aro Abesan Estate, Ipaja, Lagos</p>
+          <p className="fellowship-host">Host: Pst. & Sst. Dolamu/Damilola Akinremi</p>
+          <a href="tel:08031567268" className="fellowship-call">📞 08031567268</a>
+        </div>
+      </div>
+
+    </div>
+
+    {/* CALL FOR DIRECTIONS */}
+    <div className="address-call-card">
+      <span>📞</span>
+      <div>
+        <p className="address-call-title">Need Directions?</p>
+        <p className="address-call-sub">Call us and we'll guide you right to our door</p>
+        <a href="tel:08033448926" className="address-call-btn">CALL FOR DIRECTIONS</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* NEW MEMBER FORM */}
       <section className="new-member-section" id="join">
