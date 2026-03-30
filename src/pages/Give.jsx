@@ -39,7 +39,7 @@ function Give() {
       </section>
 
       {/* WAYS TO GIVE */}
-      <section id="ways-to-give" className="ways-to-give">
+      <section id="ways-to-give" className="ways-to-give" data-aos="fade-up">
         <div className="container">
           <div className="section-header">
             <span className="badge">GIVE TO THE EAGLES ASSEMBLY</span>
@@ -49,7 +49,7 @@ function Give() {
           </div>
 
           {/* CHURCH ACCOUNTS CARD */}
-          <div className="primary-card">
+          <div className="primary-card" data-aos="fade-up">
             <div className="bank-header">
               <span className="church-accounts-title">CHURCH ACCOUNTS</span>
               <img src="/images/flag.jpg" alt="Nigeria Flag" className="flag" />
@@ -76,7 +76,7 @@ function Give() {
           </div>
 
           {/* THANK YOU */}
-          <div className="give-thankyou">
+          <div className="give-thankyou" data-aos="fade-up">
             <div className="give-thankyou-illustration">🙌</div>
             <h3 className="give-thankyou-title">Thank You for Giving!</h3>
             <p className="give-thankyou-text">

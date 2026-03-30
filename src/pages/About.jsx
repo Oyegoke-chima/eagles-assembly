@@ -65,7 +65,7 @@ function About() {
       </section>
 
       {/* ABOUT THE CHURCH */}
-      <section className="church-about">
+      <section className="church-about" data-aos="fade-up">
         <div className="church-about-container">
           <div className="church-about-text">
             <p className="church-about-label">OUR STORY</p>
@@ -89,7 +89,7 @@ function About() {
       </section>
 
       {/* LEAD PASTOR */}
-      <section className="pastor">
+      <section className="pastor" data-aos="fade-up">
         <div className="pastor-image">
           <img src="/images/pastor.png" alt="Pastor Segun Oyegoke" />
         </div>
@@ -109,25 +109,25 @@ function About() {
       </section>
 
       {/* SERVICE TIMES */}
-      <section className="services-section">
+      <section className="services-section" data-aos="fade-up">
         <div className="services-container">
           <p className="services-label">JOIN US</p>
           <h2 className="services-title">Days of Service</h2>
           <div className="services-grid">
-            <div className="service-box">
+            <div className="service-box" data-aos="fade-up" data-aos-delay="0">
               <span className="service-box-icon">🌅</span>
               <h4>Sunday Service</h4>
               <p>Sunday School  — 8:00 AM - 9:00 AM.</p>
               <p>Sunday Glorious Service — 9:00 AM.</p>
               <p>Communion Service 1st Sundays — 5:30 PM. </p>
             </div>
-            <div className="service-box">
+            <div className="service-box" data-aos="fade-up" data-aos-delay="150">
               <span className="service-box-icon">📖</span>
               <h4>Midweek Service</h4>
               <p>Digging Deep (Every Tuesday) — 6:30 PM.</p>
               <p>Faith Clinic (Every Thursday) —  6:30 PM.</p>
             </div>
-            <div className="service-box">
+            <div className="service-box" data-aos="fade-up" data-aos-delay="300">
               <span className="service-box-icon">✨</span>
               <h4>SPECIAL SERVICES</h4>
               <p>Monthly Vigil (Every 2nd Fridays) — 11:00 PM.</p>
@@ -139,7 +139,7 @@ function About() {
       </section>
       {/* ADDRESS */}
       {/* ADDRESS */}
-<section className="address-section">
+<section className="address-section" data-aos="fade-up">
   <div className="address-container">
     <p className="address-label">FIND US</p>
     <h2 className="address-title">Our Location</h2>
@@ -233,7 +233,7 @@ function About() {
 
 
       {/* NEW MEMBER FORM */}
-      <section className="new-member-section" id="join">
+      <section className="new-member-section" id="join" data-aos="fade-up">
         <div className="new-member-container">
           <p className="new-member-label">GET CONNECTED</p>
           <h2 className="new-member-title">Join The Eagles Assembly</h2>
