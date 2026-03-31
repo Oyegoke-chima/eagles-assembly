@@ -25,7 +25,7 @@ function Give() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-overlay"></div>
-        <div className="hero-content">
+        <div className="hero-content" data-aos="fade-up">
           <h1 className="hero-tagline">
             RAISING <span className="highlight">PEOPLE</span><br />
             TO <span className="highlight">SOAR</span><br />

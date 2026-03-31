@@ -18,8 +18,6 @@ function Footer() {
           </p>
         </div>
     
-
-
         <div className="footer-col">
           <h4 className="footer-heading">QUICK LINKS</h4>
           <ul className="footer-links">
