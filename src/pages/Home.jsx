@@ -9,7 +9,7 @@ function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-overlay"></div>
-        <div className="hero-content">
+        <div className="hero-content" data-aos="fade-up">
           <h1 className="hero-tagline">
             RAISING <span className="highlight">PEOPLE</span><br />
             TO <span className="highlight">SOAR</span><br />
@@ -21,7 +21,7 @@ function Home() {
       </section>
 
       {/* WELCOME HOME */}
-      <section className="about">
+      <section className="about" data-aos="fade-up">
         <div className="about-container">
           <h2 className="about-label">WELCOME HOME</h2>
           <p className="about-text">
@@ -34,17 +34,17 @@ function Home() {
          
           {/* VALUE CARDS */}
           <div className="about-values">
-            <div className="value-card">
+            <div className="value-card" data-aos="fade-up" data-aos-delay="0">
               <span className="value-icon">🙏</span>
               <h4>Prayer</h4>
               <p>We believe in the power of intercession</p>
             </div>
-            <div className="value-card">
+            <div className="value-card" data-aos="fade-up" data-aos-delay="150">
               <span className="value-icon">📖</span>
               <h4>The Word</h4>
               <p>Grounded in truth, led by scripture</p>
             </div>
-            <div className="value-card">
+            <div className="value-card" data-aos="fade-up" data-aos-delay="300">
               <span className="value-icon">🤝</span>
               <h4>Community</h4>
               <p>A family built on love and faith</p>
@@ -57,7 +57,7 @@ function Home() {
 
       {/* PRAYER CARDS */}
       <section className="prayer">
-        <div className="prayer-card">
+        <div className="prayer-card" data-aos="fade-up" data-aos-delay="0">
           <div className="prayer-overlay"></div>
           <div className="prayer-content">
             <p className="prayer-label">WE INTERCEDE</p>
@@ -66,7 +66,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="prayer-card">
+        <div className="prayer-card" data-aos="fade-up" data-aos-delay="150">
           <div className="prayer-overlay"></div>
           <div className="prayer-content">
             <p className="prayer-label">WE'RE GRATEFUL</p>
@@ -75,7 +75,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="prayer-card">
+        <div className="prayer-card" data-aos="fade-up" data-aos-delay="300">
           <div className="prayer-overlay"></div>
           <div className="prayer-content">
             <p className="prayer-label">WE INTERCEDE</p>
@@ -86,11 +86,11 @@ function Home() {
       </section>
 
       {/* PASTOR */}
-      <section className="pastor">
-        <div className="pastor-image">
+      <section className="pastor" data-aos="fade-up">
+        <div className="pastor-image" data-aos="fade-right">
           <img src="/images/pastor.png" alt="Pastor Segun Oyegoke" />
         </div>
-        <div className="pastor-content">
+        <div className="pastor-content" data-aos="fade-left">
           <h2 className="pastor-title">OUR LEAD PASTOR</h2>
           <p className="pastor-text">
             <span className="pastor-bold">PASTOR SEGUN OYEGOKE</span> is the lead pastor
@@ -106,9 +106,9 @@ function Home() {
       </section>
 
       {/* GIVE */}
-      <section className="give">
+      <section className="give" data-aos="fade-up">
         <div className="give-card">
-          <div className="give-left">
+          <div className="give-left" data-aos="faade-right">
             <h2 className="give-title">GIVE TO THE EAGLES ASSEMBLY</h2>
             <p className="give-text">Your generosity keeps blessing lives, thank you for giving</p>
             <div className="give-buttons">
@@ -116,7 +116,7 @@ function Home() {
               <a href="/give" className="give-btn-solid">BUILDING PROJECT</a>
             </div>
           </div>
-          <div className="give-right">
+          <div className="give-right" data-aos="fade-left">
             <img src="/images/give.png" alt="Giving Hands" className="give-illustration" />
           </div>
         </div>
