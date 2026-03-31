@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import useScrollAnimation from '../hooks/useScrollAnimation'
 
 function Give() {
+  useScrollAnimation()
   const [copiedIndex, setCopiedIndex] = useState(null)
 
   const handleCopy = (number, index) => {
@@ -25,7 +27,7 @@ function Give() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-overlay"></div>
-        <div className="hero-content" data-aos="fade-up">
+        <div className="hero-content fade-up">
           <h1 className="hero-tagline">
             RAISING <span className="highlight">PEOPLE</span><br />
             TO <span className="highlight">SOAR</span><br />
@@ -39,9 +41,9 @@ function Give() {
       </section>
 
       {/* WAYS TO GIVE */}
-      <section id="ways-to-give" className="ways-to-give" data-aos="fade-up">
+      <section id="ways-to-give" className="ways-to-give">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header fade-up">
             <span className="badge">GIVE TO THE EAGLES ASSEMBLY</span>
             <h2>Ways To Give</h2>
             <p>Join us as we put our money right where our faith is,
@@ -49,7 +51,7 @@ function Give() {
           </div>
 
           {/* CHURCH ACCOUNTS CARD */}
-          <div className="primary-card" data-aos="fade-up">
+          <div className="primary-card fade-up">
             <div className="bank-header">
               <span className="church-accounts-title">CHURCH ACCOUNTS</span>
               <img src="/images/flag.jpg" alt="Nigeria Flag" className="flag" />
@@ -76,7 +78,7 @@ function Give() {
           </div>
 
           {/* THANK YOU */}
-          <div className="give-thankyou" data-aos="fade-up">
+          <div className="give-thankyou fade-up">
             <div className="give-thankyou-illustration">🙌</div>
             <h3 className="give-thankyou-title">Thank You for Giving!</h3>
             <p className="give-thankyou-text">
