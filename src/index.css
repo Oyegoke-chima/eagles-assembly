@@ -1126,10 +1126,18 @@ html {
 
 /* HERO — tall peach section, form overlaps from below */
 .prayer-hero {
-  background: #FFB783;
+  background: url('/images/mainIMG.png') center center / cover no-repeat;
+  background-color: #1a2e25;
   padding: 5rem 2rem 16rem;
   text-align: center;
   height:100vh;
+  position:relative;
+}
+.prayer-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba (0, 0, 0, 0.45);
 }
 
 .prayer-hero-label {
@@ -1143,19 +1151,21 @@ html {
 }
 
 .prayer-hero-content{
-    padding-top: 200px;
+  position:relative;
+  z-index: 1;
+    padding-top:0;
 }
 .prayer-hero-title {
   font-family: 'Kalnia', serif;
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 900;
-  color: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .prayer-hero-highlight {
-  color: #ffffff;
+  color: #C9a96e;
   
 }
 
@@ -2018,7 +2028,7 @@ html {
 }
 
 @keyframes heroFadeUp {
-  from{
+  from {
   opacity: 0;
   transform: translateY(40px);
   }
