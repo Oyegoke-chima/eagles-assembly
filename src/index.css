@@ -2014,3 +2014,17 @@ html {
   color: #FFB783;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .account-grid {
+    grid-template-columns: 1fr; /* ← stack to single column */
+  }
+
+  .primary-card {
+    padding: 20px 15px; /* ← tighten padding */
+  }
+
+  .account-number {
+    font-size: 0.85rem; /* ← shrink account number text slightly */
+  }
+}
