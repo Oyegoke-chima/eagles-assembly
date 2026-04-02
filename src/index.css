@@ -31,7 +31,9 @@ html, body {
    NAVBAR
 =========================== */
 .navbar {
-  position: relative;
+  position: sticky;     /* ← CHANGE TO THIS */
+  top: 0;               /* ← ADD THIS */
+  z-index: 100;         /* ← ADD THIS */
   background: #fff;
   padding: 1rem 0;
   border-bottom: 1px solid #eee;
@@ -1119,56 +1121,6 @@ html {
 
 
 
-
-/* ===========================
-   PRAYER REQUEST PAGE
-=========================== */
-
-/* HERO — tall peach section, form overlaps from below */
-.prayer-hero {
-  background: url('/images/mainIMG.png') center center / cover no-repeat;
-  background-color: #1a2e25;
-  padding: 5rem 2rem 16rem;
-  text-align: center;
-  height:100vh;
-  position:relative;
-}
-.prayer-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba (0, 0, 0, 0.45);
-}
-
-.prayer-hero-label {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 0.8rem;
-}
-
-.prayer-hero-content{
-  position:relative;
-  z-index: 1;
-    padding-top:0;
-}
-.prayer-hero-title {
-  font-family: 'Kalnia', serif;
-  font-size: clamp(2rem, 6vw, 4rem);
-  font-weight: 900;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.prayer-hero-highlight {
-  color: #C9a96e;
-  
-}
-
 /* FORM SECTION — pulls up over hero */
 .prayer-form-section {
   background: #ffffff;
@@ -1293,18 +1245,11 @@ html {
    RESPONSIVE
 =========================== */
 @media (max-width: 768px) {
-  .prayer-hero {
-    padding: 3rem 1.5rem 8rem;
-    height: 40vh;
-  }
 
   .prayer-form-section {
     padding: 0 0 4rem;
     margin-top: -5rem;
   }
-.prayer-hero-content{
-    padding: 40px;
-}
   .prayer-form-card {
     border-radius: 12px;
     padding: 2.5rem 1.5rem;
@@ -1319,11 +1264,6 @@ html {
 }
 
 @media (max-width: 480px) {
-  .prayer-hero-title {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-
   .prayer-form-card {
     padding: 2rem 1rem;
     margin: 0 0.5rem;
@@ -1451,18 +1391,7 @@ html {
 /* ===========================
    ABOUT PAGE HERO
 =========================== */
-.about-hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: url('/images/mainIMG.png') center center / cover no-repeat;
-  background-color: #1a2e25;
-}
+
 
 .about-hero-overlay {
   position: absolute;
@@ -2036,4 +1965,52 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.prayer-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('/images/mainIMG.png') center center / cover no-repeat;
+}
+
+.prayer-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.prayer-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.prayer-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.prayer-title {
+  font-family: 'Kalnia', serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.prayer-highlight {
+  color: #FFB783;
+  font-style: italic;
 }

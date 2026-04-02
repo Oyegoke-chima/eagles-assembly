@@ -54,9 +54,9 @@ function About() {
       <Navbar />
 
       {/* HERO */}
-      <section className="about-hero">
-        <div className="about-hero-overlay"></div>
-        <div className="about-hero-content">
+      <section className="hero">
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
           <p className="about-hero-label">WHO WE ARE</p>
           <h1 className="about-hero-title">
             ABOUT <span className="about-hero-highlight">US</span>

@@ -21,13 +21,11 @@ function Prayer() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-
     const response = await fetch('https://formspree.io/f/xqeyzgjq', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
     })
-
     if (response.ok) {
       setSubmitted(true)
       setLoading(false)
@@ -41,9 +39,9 @@ function Prayer() {
       {/* HERO */}
       <section className="prayer-hero">
         <div className="prayer-hero-content">
-          <p className="prayer-hero-label">FORMS</p>
-          <h1 className="prayer-hero-title">
-            PRAYER <span className="prayer-hero-highlight">REQUEST</span>
+          <p className="prayer-label">FORMS</p>
+          <h1 className="prayer-title">
+            PRAYER <span className="prayer-highlight">REQUEST</span>
           </h1>
         </div>
       </section>
@@ -60,88 +58,38 @@ function Prayer() {
             </div>
           ) : (
             <form className="prayer-form" onSubmit={handleSubmit}>
-
-              {/* Name */}
               <div className="form-group">
-                <label className="form-label">
-                  Name <span className="required">(Required)</span>
-                </label>
+                <label className="form-label">Name <span className="required">(Required)</span></label>
                 <div className="form-row">
                   <div className="form-col">
-                    <input
-                      type="text"
-                      name="firstName"
-                      className="form-input"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      required
-                    />
+                    <input type="text" name="firstName" className="form-input" value={formData.firstName} onChange={handleChange} required />
                     <span className="form-hint">First Name</span>
                   </div>
                   <div className="form-col">
-                    <input
-                      type="text"
-                      name="lastName"
-                      className="form-input"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      required
-                    />
+                    <input type="text" name="lastName" className="form-input" value={formData.lastName} onChange={handleChange} required />
                     <span className="form-hint">Last Name</span>
                   </div>
                 </div>
               </div>
 
-              {/* Phone */}
               <div className="form-group">
-                <label className="form-label">
-                  Phone <span className="required">(Required)</span>
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  className="form-input"
-                  placeholder="Phone number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                />
+                <label className="form-label">Phone <span className="required">(Required)</span></label>
+                <input type="tel" name="phone" className="form-input" placeholder="Phone number" value={formData.phone} onChange={handleChange} required />
               </div>
 
-              {/* Email */}
               <div className="form-group">
-                <label className="form-label">
-                  Email <span className="required">(Required)</span>
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  className="form-input"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
+                <label className="form-label">Email <span className="required">(Required)</span></label>
+                <input type="email" name="email" className="form-input" value={formData.email} onChange={handleChange} required />
               </div>
 
-              {/* Prayer Request */}
               <div className="form-group">
-                <label className="form-label">
-                  Prayer Request <span className="required">(Required)</span>
-                </label>
-                <textarea
-                  name="request"
-                  className="form-input form-textarea"
-                  placeholder="Share your prayer request here..."
-                  value={formData.request}
-                  onChange={handleChange}
-                  required
-                />
+                <label className="form-label">Prayer Request <span className="required">(Required)</span></label>
+                <textarea name="request" className="form-input form-textarea" placeholder="Share your prayer request here..." value={formData.request} onChange={handleChange} required />
               </div>
 
               <button type="submit" className="form-submit" disabled={loading}>
                 {loading ? 'SENDING...' : 'SUBMIT REQUEST'}
               </button>
-
             </form>
           )}
         </div>
