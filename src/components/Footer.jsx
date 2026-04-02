@@ -30,8 +30,8 @@ function Footer() {
         <div className="footer-col">
           <h4 className="footer-heading">QUICK LINKS</h4>
           <ul className="footer-links">
-            <li><Link to="#">Join Us</Link></li>
-            <li><Link to="#">Mixlr</Link></li>
+            <li><Link to="/about#join">Join Us</Link></li>
+            <li><Link to="">Mixlr</Link></li>
             <li><Link to="#">Services</Link></li>
           </ul>
         </div>
