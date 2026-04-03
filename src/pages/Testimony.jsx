@@ -1,8 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 function Testimony() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }, [location])
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -47,7 +59,7 @@ function Testimony() {
       </section>
 
       {/* FORM */}
-      <section className="prayer-form-section">
+      <section className="prayer-form-section" id="testimony-form">
         <div className="prayer-form-card">
           <h2 className="prayer-form-heading">Please provide your details</h2>
 

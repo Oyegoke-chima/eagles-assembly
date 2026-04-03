@@ -32,9 +32,9 @@ function Footer() {
           <h4 className="footer-heading">QUICK LINKS</h4>
           <ul className="footer-links">
             <li><Link to="/about#join">Join Us</Link></li>
-            <li><Link to="">Mixlr</Link></li>
+            <li><a href="https://mixlr.com/segpeter007">Mixlr</a></li>
             <li><Link to="#">Services</Link></li>
-            <li><Link to="/testimony">Testimony</Link></li>
+            <li><Link to="/testimony/#testimony-form">Testimony</Link></li>
           </ul>
         </div>
 
