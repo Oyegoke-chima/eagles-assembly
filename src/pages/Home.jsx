@@ -73,7 +73,7 @@ function Home() {
           <div className="prayer-content">
             <p className="prayer-label">WE'RE GRATEFUL</p>
             <h3 className="prayer-title">SHARE<br />TESTIMONIES</h3>
-            <a href="#" className="prayer-cta">SHARE WITH US</a>
+            <a href="/testimony" className="prayer-cta">SHARE WITH US</a>
           </div>
         </div>
 

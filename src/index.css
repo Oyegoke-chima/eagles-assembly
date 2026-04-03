@@ -2028,3 +2028,12 @@ html {
     font-size: 0.85rem; /* ← shrink account number text slightly */
   }
 }
+
+.hero-verse {
+  font-family: 'Kalnia', serif;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: -1rem;
+}

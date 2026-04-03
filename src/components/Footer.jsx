@@ -22,8 +22,9 @@ function Footer() {
           <h4 className="footer-heading">QUICK LINKS</h4>
           <ul className="footer-links">
             <li><Link to="/prayer">Prayer Request</Link></li>
-            <li><Link to="/give">Give</Link></li>
-            <li><Link to="/">Online Sermon</Link></li>
+            <li><Link to="/give#ways-to-give">Give</Link></li>
+            <li><a href="https://www.facebook.com/share/v/18Mea2u3h4/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Online Sermon</a></li>
+            
           </ul>
         </div>
 
@@ -33,6 +34,7 @@ function Footer() {
             <li><Link to="/about#join">Join Us</Link></li>
             <li><Link to="">Mixlr</Link></li>
             <li><Link to="#">Services</Link></li>
+            <li><Link to="/testimony">Testimony</Link></li>
           </ul>
         </div>
 

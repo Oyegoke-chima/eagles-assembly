@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import useScrollAnimation from '../hooks/useScrollAnimation'
@@ -6,6 +7,16 @@ import useScrollAnimation from '../hooks/useScrollAnimation'
 function Give() {
   useScrollAnimation()
   const [copiedIndex, setCopiedIndex] = useState(null)
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(location.hash)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }, [location])
 
   const handleCopy = (number, index) => {
     navigator.clipboard.writeText(number)
@@ -29,11 +40,11 @@ function Give() {
         <div className="hero-overlay"></div>
         <div className="hero-content fade-up">
           <h1 className="hero-tagline">
-            RAISING <span className="highlight">PEOPLE</span><br />
-            TO <span className="highlight">SOAR</span><br />
-            IN<br />
-            <span className="highlight">PURPOSE &amp; FAITH</span>
+            GIVE TO THE <br />
+            <span className="highlight">KINGDOM</span><br />
+            OF GOD 
           </h1>
+          <p className="hero-verse">"Honour the Lord with your wealth." — Proverbs 3:9</p>
           <div className="hero-buttons">
             <a href="#ways-to-give" className="hero-cta-outline">GIVE NOW</a>
           </div>

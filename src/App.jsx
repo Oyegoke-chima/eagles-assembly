@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Give from './pages/Give'
 import Prayer from './pages/Prayer'
 import About from './pages/About'
+import Testimony from './pages/Testimony'
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/give" element={<Give />} />
         <Route path="/prayer" element={<Prayer />} />
         <Route path="/about" element={<About/>} />
+        <Route path="/testimony" element={<Testimony />} />
       </Routes>
     </BrowserRouter>
   )
