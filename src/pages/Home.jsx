@@ -64,7 +64,7 @@ function Home() {
           <div className="prayer-content">
             <p className="prayer-label">WE INTERCEDE</p>
             <h3 className="prayer-title">REQUEST<br />PRAYER</h3>
-            <a href="/prayer" className="prayer-cta">LET'S PRAY</a>
+            <a href="/prayers" className="prayer-cta">LET'S PRAY</a>
           </div>
         </div>
 
