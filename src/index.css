@@ -265,27 +265,63 @@ html {
   width: 100%;
 }
 
-.prayer-card {
+.prayer-card1 {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 500px;
   overflow: hidden;
-  background: url('/images/prayer.png') center center / cover no-repeat;
+  background: url('/images/prayers.jpeg') center top / cover no-repeat;
   background-color: #1a2e25;
+
 }
 
-.prayer-overlay {
+.prayer-card1 .prayer-overlay{
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.50);
+  background: rgba(0, 0, 0, 0.55); /* increase this number to darken more */
   transition: background 0.3s ease;
 }
 
-.prayer-card:hover .prayer-overlay {
-  background: rgba(0, 0, 0, 0.35);
+.prayer-card2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+  background: url('/images/testimony.jpeg') center top / cover no-repeat;
+  background-color: #1a2e25;
+
 }
+
+.prayer-card2 .prayer-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 3, 3, 0.65); /* increase this number to darken more */
+  transition: background 0.3s ease;
+}
+
+
+.prayer-card3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+  background: url('/images/fellowship.jpeg') center top / cover no-repeat;
+  background-color: #1a2e25;
+
+}
+.prayer-card3 .prayer-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* increase this number to darken more */
+  transition: background 0.3s ease;
+}
+
 
 .prayer-content {
   position: relative;

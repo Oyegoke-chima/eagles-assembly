@@ -59,16 +59,16 @@ function Home() {
 
       {/* PRAYER CARDS */}
       <section className="prayer fade-up">
-        <div className="prayer-card">
+        <div className="prayer-card1">
           <div className="prayer-overlay"></div>
           <div className="prayer-content">
             <p className="prayer-label">WE INTERCEDE</p>
             <h3 className="prayer-title">REQUEST<br />PRAYER</h3>
-            <a href="/prayers" className="prayer-cta">LET'S PRAY</a>
+            <a href="/prayer" className="prayer-cta">LET'S PRAY</a>
           </div>
         </div>
 
-        <div className="prayer-card" >
+        <div className="prayer-card2" >
           <div className="prayer-overlay"></div>
           <div className="prayer-content">
             <p className="prayer-label">WE'RE GRATEFUL</p>
@@ -77,7 +77,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="prayer-card">
+        <div className="prayer-card3">
           <div className="prayer-overlay"></div>
           <div className="prayer-content">
             <p className="prayer-label">WE INTERCEDE</p>
