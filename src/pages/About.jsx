@@ -54,7 +54,7 @@ function About() {
       <Navbar />
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero hero-about">
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <p className="about-hero-label">WHO WE ARE</p>
@@ -72,8 +72,9 @@ function About() {
             <h2 className="church-about-title">The Eagles Assembly</h2>
             <p className="church-about-body">
               <strong>THE EAGLES ASSEMBLY</strong> is not just a space, it is an experience.
-              It is a series of impactful and transformational encounters that bring change
-              to the lives of people. It is felt, seen, heard and perceived like fragrance.
+             The Parish of the Redeemed Christian Church of God, named (The Eagles Assembly), was inaugurated on the 29th of January, 2012. 
+             The then Zonal Pastor of the Abule Egba Zone of RCCG,
+              Lagos Province 2, Pastor Osai Odigie, planted the parish.
             </p>
             <p className="church-about-body">
               We are a dynamic teaching ministry dedicated to spreading the gospel and

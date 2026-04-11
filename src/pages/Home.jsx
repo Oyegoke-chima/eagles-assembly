@@ -9,7 +9,7 @@ function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero hero-home">
         <div className="hero-overlay"></div>
         <div className="hero-content fade-up">
           <h1 className="hero-tagline">
@@ -90,7 +90,7 @@ function Home() {
       {/* PASTOR */}
       <section className="pastor" >
         <div className="pastor-image fade-right">
-          <img src="/images/pastor.png" alt="Pastor Segun Oyegoke" />
+          <img src="/images/DSI-2.png" alt="Pastor Segun Oyegoke" />
         </div>
         <div className="pastor-content fade-left">
           <h2 className="pastor-title">OUR LEAD PASTOR</h2>

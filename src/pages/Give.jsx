@@ -36,7 +36,7 @@ function Give() {
       <Navbar />
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero hero-give">
         <div className="hero-overlay"></div>
         <div className="hero-content fade-up">
           <h1 className="hero-tagline">
