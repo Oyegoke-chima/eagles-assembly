@@ -42,7 +42,7 @@ function Give() {
           <h1 className="hero-tagline">
             GIVE TO THE <br />
             <span className="highlight">KINGDOM</span><br />
-            OF GOD 
+            OF GOD
           </h1>
           <p className="hero-verse">"Honour the Lord with your wealth." — Proverbs 3:9</p>
           <div className="hero-buttons">
@@ -56,7 +56,7 @@ function Give() {
         <div className="container">
           <div className="section-header fade-up">
             <span className="badge">GIVE TO THE EAGLES ASSEMBLY</span>
-            <h2>Ways To Give</h2>
+            <h2 className='badge-text'>Ways To Give</h2>
             <p>Join us as we put our money right where our faith is,
               partnering with God for the spread of the gospel in our day.</p>
           </div>
@@ -72,17 +72,29 @@ function Give() {
               {accounts.map((account, index) => (
                 <div className="account-box" key={index}>
                   <small>{account.label}</small>
-                  <div className="account-number">
+
+                  {/* Bank logo + name */}
+                  <div className="bank-identity">
                     <img src={account.logo} alt={account.bank} className="bank-logo-sm" />
+                    <span className="bank-name">{account.bank}</span>
+                  </div>
+
+                  {/* Account number + copy button */}
+                  <div className="account-number">
                     <span className="account-text">{account.number}</span>
                     <button
                       className="copy-btn"
                       onClick={() => handleCopy(account.number, index)}
                       style={{ opacity: copiedIndex === index ? 0.5 : 1 }}
+                      title="Copy account number"
                     >
-                      <img src="/images/copy.png" alt="Copy" className="copy-icon" />
+                      {copiedIndex === index
+                        ? <span className="copied-label">Copied!</span>
+                        : <img src="/images/copy.png" alt="Copy" className="copy-icon" />
+                      }
                     </button>
                   </div>
+
                 </div>
               ))}
             </div>
