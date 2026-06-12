@@ -6,12 +6,9 @@ function Footer() {
       <div className="footer-container">
 
         <div className="footer-col">
-          <h4 className="footer-heading">ABOUT US</h4>
+          <h4 className="footer-heading">ADDRESS</h4>
           <p className="footer-about">
-            <span className="footer-bold">THE EAGLES ASSEMBLY</span> is not just a space,
-            it is an experience. It is a series of impactful and transformational
-            encounters that bring change to the lives of people. It is felt, seen,
-            heard and perceived like fragrance.
+            <span className="footer-bold">20 Ogunbiyi Street, Off Akinwowo, Alimosho, Lagos. </span>
           </p>
         </div>
     

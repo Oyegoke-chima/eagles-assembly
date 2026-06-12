@@ -2,11 +2,14 @@ import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { MapPin, Phone } from 'lucide-react'
+
 
 const collageSets = [
   ['/images/DSI-8.jpg', '/images/DSI-6.jpg', '/images/DSI-9.jpg'],
   ['/images/DSI-11.jpg', '/images/DSI-7.jpeg', '/images/DSI-5.jpeg'],
 ]
+
 
 function About() {
   const [formData, setFormData] = useState({
@@ -78,8 +81,6 @@ function About() {
       {/* ABOUT THE CHURCH */}
       <section className="church-about" data-aos="fade-up">
         <div className="church-about-container">
-
-          {/* LEFT — Text */}
           <div className="church-about-text">
             <p className="church-about-label">OUR STORY</p>
             <h2 className="church-about-title">The Eagles Assembly</h2>
@@ -97,7 +98,6 @@ function About() {
             </p>
           </div>
 
-          {/* RIGHT — Collage Slideshow */}
           <div className="church-collage" key={collageSet}>
             <div className="collage-top">
               <img src={current[0]} alt="Eagles Assembly" className="collage-img" />
@@ -116,7 +116,6 @@ function About() {
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
@@ -133,10 +132,33 @@ function About() {
             the gospel and helping people discover their purpose in Christ. With a
             passion for the Word of God and a heart for mission.
           </p>
-          <p className="pastor-tagline">Join him on mixlr everyday at 6pm!!!</p>
-          <a href="https://mixlr.com/segpeter007" className="pastor-cta">
-            <span className="pastor-play-icon">▶</span> THE MOMENT OF TRUTH
-          </a>
+          
+          {/* BOOK MOCKUP */}
+          <div className="pastor-book">
+            <div className="pastor-book-card">
+              <div className="pastor-book-mockup">
+                <div className="book-spine" />
+                <div className="book-cover">
+                  <img src="/images/Mammon.png" alt="Mammon on Rampage by Olusegun Peter Oyegoke" />
+                </div>
+                <div className="book-shadow" />
+              </div>
+              <div className="pastor-book-info">
+                <p className="pastor-book-eyebrow">📖 NEW BOOK</p>
+                <h3 className="pastor-book-title">Mammon on Rampage</h3>
+                <p className="pastor-book-sub">by Olusegun Peter Oyegoke</p>
+                <p className="pastor-book-desc">Your guide to total freedom — a powerful revelation on breaking the grip of mammon in your life.</p>
+                <a
+                  href="https://www.amazon.com/s?k=Mammon+on+Rampage+Olusegun+Peter+Oyegoke"
+                  className="pastor-book-cta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GET ON AMAZON →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -177,7 +199,9 @@ function About() {
           <h2 className="address-title">Our Location</h2>
 
           <div className="address-card main-address">
-            <span className="address-icon">📍</span>
+            <div className="address-icon-wrap">
+              <MapPin size={32} strokeWidth={1.5} color="#FFB783" />
+            </div>
             <p className="address-main-tag">HEADQUARTERS</p>
             <p>20 Ogunbiyi Street, Off Akinwowo,</p>
             <p>Alimosho, Lagos</p>
@@ -191,7 +215,10 @@ function About() {
                 <h4>Divine Grace Centre</h4>
                 <p>16, Segun Marekobosi Street, Off Folarin Street, Egbeda/Alimosho, Lagos</p>
                 <p className="fellowship-host">Host: Sis. Amarachi Nwaorgu</p>
-                <a href="tel:08034406279" className="fellowship-call">📞 08034406279</a>
+                <a href="tel:08034406279" className="fellowship-call">
+                  <Phone size={13} strokeWidth={2} />
+                  08034406279
+                </a>
               </div>
             </div>
             <div className="fellowship-card">
@@ -200,7 +227,10 @@ function About() {
                 <h4>House of Prayer Centre <span className="fellowship-axis">(Agbelekale Area)</span></h4>
                 <p>8, Isua Street, Agbelekale, Abule Egba</p>
                 <p className="fellowship-host">Host: Bro. & Sis. Taiwo Rokosu</p>
-                <a href="tel:08033448926" className="fellowship-call">📞 08033448926</a>
+                <a href="tel:08033448926" className="fellowship-call">
+                  <Phone size={13} strokeWidth={2} />
+                  08033448926
+                </a>
               </div>
             </div>
             <div className="fellowship-card">
@@ -209,7 +239,10 @@ function About() {
                 <h4>Holiness Centre <span className="fellowship-axis">(Salolo/Meiran Axis)</span></h4>
                 <p>Flat 5, Block 130, Ojokoro Housing Estate, Meiran-Ijaye, Meiran B/Stop, Off Lagos/Abeokuta E/way</p>
                 <p className="fellowship-host">Host: Bro. & Sis. Demola Ekundayo</p>
-                <a href="tel:08061185051" className="fellowship-call">📞 08061185051</a>
+                <a href="tel:08061185051" className="fellowship-call">
+                 <Phone size={13} strokeWidth={2} />
+                  08061185051
+                </a>
               </div>
             </div>
             <div className="fellowship-card">
@@ -218,7 +251,10 @@ function About() {
                 <h4>Salvation Centre <span className="fellowship-axis">(Akiwowo/Egbeda Axis)</span></h4>
                 <p>2, Jimoh Akinremi Street Adjacent Akiwowo Street, Egbeda</p>
                 <p className="fellowship-host">Host: Mama Fatoki</p>
-                <a href="tel:07039738055" className="fellowship-call">📞 07039738055</a>
+                <a href="tel:07039738055" className="fellowship-call">
+                  <Phone size={13} strokeWidth={2} />
+                  07039738055
+                </a>
               </div>
             </div>
             <div className="fellowship-card">
@@ -227,7 +263,10 @@ function About() {
                 <h4>Victory Centre <span className="fellowship-axis">(Ogunbiyi/Akiwowo Axis)</span></h4>
                 <p>6, Ogunbiyi Street, Off Akiwowo Street</p>
                 <p className="fellowship-host">Host: Bro. & Sis. Ik/Nkem Okonmah</p>
-                <a href="tel:07031884354" className="fellowship-call">📞 07031884354</a>
+                <a href="tel:07031884354" className="fellowship-call">
+                 <Phone size={13} strokeWidth={2} />
+                  07031884354
+                </a>
               </div>
             </div>
             <div className="fellowship-card">
@@ -236,13 +275,18 @@ function About() {
                 <h4>Jesus Haven Centre <span className="fellowship-axis">(Abesan/Ipaja Axis)</span></h4>
                 <p>4, Ighodoula Street Abusede, Aro Abesan Estate, Ipaja, Lagos</p>
                 <p className="fellowship-host">Host: Pst. & Sst. Dolamu/Damilola Akinremi</p>
-                <a href="tel:08031567268" className="fellowship-call">📞 08031567268</a>
+                <a href="tel:08031567268" className="fellowship-call">
+                  <Phone size={13} strokeWidth={2} />
+                  08031567268
+                </a>
               </div>
             </div>
           </div>
 
           <div className="address-call-card">
-            <span>📞</span>
+            <div className="address-call-icon">
+              <Phone size={26} strokeWidth={1.5} color="#FFB783" />
+            </div>
             <div>
               <p className="address-call-title">Need Directions?</p>
               <p className="address-call-sub">Call us and we'll guide you right to our door</p>
