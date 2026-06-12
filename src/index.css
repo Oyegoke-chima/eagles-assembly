@@ -713,3 +713,24 @@ body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #ffffff; overf
     display: none;
   }
 }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 75vh;
+    min-height: unset;
+    align-items: center;
+  }
+
+  .hero-content {
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+}
+.hero-home::before {
+  background: rgba(0,0,0,0.75) !important;
+}
