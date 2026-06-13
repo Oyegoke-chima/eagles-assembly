@@ -59,12 +59,7 @@ function Home() {
             <p className="about-text"><span className="about-bold">THE EAGLES ASSEMBLY</span> is not just a space, it is an experience. It is a series of impactful and transformational encounters that bring change to the lives of people.</p>
             <a href="/about" className="about-cta">READ MORE</a>
           </div>
-          <div className="about-values">
-            <div className="value-card fade-up"><span className="value-icon">🙏</span><div><h4>Prayer</h4><p>We believe in the power of intercession. We pray, we believe, we see miracles.</p></div></div>
-            <div className="value-card fade-up"><span className="value-icon">📖</span><div><h4>The Word</h4><p>Grounded in truth, led by scripture. Every message transforms and builds.</p></div></div>
-            <div className="value-card fade-up"><span className="value-icon">🤝</span><div><h4>Community</h4><p>A family built on love and faith. You belong here from day one.</p></div></div>
-            <div className="value-card fade-up"><span className="value-icon">🦅</span><div><h4>Purpose</h4><p>We exist to help you discover and walk in your divine purpose.</p></div></div>
-          </div>
+          
         </div>
       </section>
 
